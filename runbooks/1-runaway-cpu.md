@@ -13,5 +13,5 @@ I stopped them all with `pkill yes`. After that, the busiest processes were back
 Set up an alert for when the load stays above the number of CPU cores, and find out why a process is using that much CPU before just restarting it.
 
 ## Screenshots
-![Before](../screenshots/cpu-break-before)
+![Before](../screenshots/cpu-break-before.png)
 ![After](../screenshots/cpu-break-after.png)
