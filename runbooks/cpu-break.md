@@ -5,7 +5,7 @@ triage.sh showed a process called `backup-agent` (PID 18433) using about 92% CPU
 I didn't kill it straight away. First I checked what it was:
 
 - `ps -p 18433 -o pid,ppid,etime,cmd` showed its parent PID was 1, which means systemd started it, not a person
-- `systemctl status 18433` showed it belonged to `backup-agent.service`, and had only been running since 00:35:19, the same time the CPU problem started
+- `systemctl status 18433` show ed it belonged to `backup-agent.service`, and had only been running since 00:35:19, the same time the CPU problem started
 
 Because it was a service, killing the process wouldn't be enough. systemd can restart a service as soon as it stops, so it would just come back with a new PID.
 
